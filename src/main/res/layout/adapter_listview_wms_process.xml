@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent" >
+
+        <LinearLayout
+            android:id="@+id/rl_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            tools:ignore="RtlHardcoded" >
+
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="41dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_cirle_gray"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                tools:ignore="HardcodedText" />
+
+            <View
+                android:id="@+id/view_line_color"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="9dp"
+                android:background="@color/red" />
+        </LinearLayout>
+
+        <!-- 融资审批流程适配器 -->
+
+        <RelativeLayout
+            android:id="@+id/rl_right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/gray"
+            tools:ignore="RtlHardcoded,UselessParent" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="14dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="14dp"
+                tools:ignore="RtlHardcoded,UselessLeaf" >
+
+                <TextView
+                    android:id="@+id/tv_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right"
+                    android:text="已完成中"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/tv_JGZ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_title"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="加工者：曲丽丽"
+                    android:textColor="@color/red"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="【5】合同发起合"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/tv_JYRQ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_JYR"
+                    android:layout_alignBottom="@+id/tv_JYR"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv_JGZ"
+                    android:text="检验日期：2019-10-10"
+                    android:textColor="@color/red"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/tv_JYR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_JGZ"
+                    android:layout_below="@+id/tv_JGZ"
+                    android:text="检验人：张三"
+                    android:textColor="@color/red"
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/tv_JSRQ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_JYRQ"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/tv_JGZ"
+                    android:text=""
+                    android:textColor="@color/red"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

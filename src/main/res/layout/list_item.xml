@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="391dp"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <View
+        android:layout_width="1dip"
+        android:layout_height="fill_parent"
+        android:background="#B4B3B3" />
+
+    <TextView
+        android:id="@+id/tv_BQH"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:singleLine="true"
+        android:text="标签号"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="1dip"
+        android:layout_height="fill_parent"
+        android:background="#B4B3B3" />
+
+    <TextView
+        android:id="@+id/tv_CPBM"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:singleLine="true"
+        android:text="产品编码"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="1dip"
+        android:layout_height="fill_parent"
+        android:background="#B4B3B3" />
+
+    <TextView
+        android:id="@+id/tv_LYR"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:singleLine="true"
+        android:text="领用人"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="1dip"
+        android:layout_height="fill_parent"
+        android:background="#B4B3B3" />
+
+    <TextView
+        android:id="@+id/tv_SL"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:singleLine="true"
+        android:text="数量"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+</LinearLayout>

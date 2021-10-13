@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.avic.demo.sebeiglzx">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 因为拍照需要写入文件 所以需要申请读取内存的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name=".bean.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/im_app1"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/im_app1"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".home.Main_FA" />
+        <activity android:name=".activity.ProInventoryMgrInventoryActivity" />
+        <activity android:name=".activity.ProRfidMgrSearchActivity" />
+        <activity android:name=".activity.test.TestActivity" />
+        <activity android:name=".activity.WMSRfidInitActivity" />
+        <activity android:name=".activity.WMSRfidProReceiveActivity" />
+        <activity android:name=".activity.WMSRfidProcessActivity" />
+        <activity android:name=".activity.WMSRfidCheckReadActivity" />
+        <activity android:name=".activity.WMSRfidCheckResultActivity" />
+        <activity android:name=".activity.WMSRfidOutStoreActivity" />
+        <activity android:name=".activity.WMSRfidWasteCheckActivity" />
+        <activity android:name=".activity.WMSBindingNewRfidActivity" />
+        <activity android:name=".activity.WMSRfidDHRKActivity" />
+        <activity android:name=".activity.ProRfidMgrInitShelfActivity" />
+        <activity android:name=".activity.WMSUserCardInitActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.avic.demo.sebeiglzx"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".activity.Image_album_showActivity" />
+        <activity android:name=".activity.NetworkConfigActivity" />
+    </application>
+
+</manifest>

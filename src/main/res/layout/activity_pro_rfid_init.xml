@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <!--<ListView
+        android:id="@+id/listView_pro_rfid_init"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_choice"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="-63dp"
+        android:divider="@color/silver"
+        android:dividerHeight="3px"
+        android:paddingBottom="120dp"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll"></ListView>-->
+
+    <LinearLayout
+        android:id="@+id/ll_choice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EDECEC"
+        android:orientation="vertical"
+        android:paddingBottom="5dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#2fa4e7"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:src="@drawable/tb_icon_actionbar_back" />
+
+            <TextView
+                android:id="@+id/tv_top_title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:text="RFID卡初始化"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/iv_pro_up_shelf_more"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:src="@drawable/tb_icon_actionbar_more" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_pro_rfid_init_read_card_add"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@color/chocolate"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="读卡"
+                android:textColor="@color/tv_White" />
+
+            <TextView
+                android:id="@+id/tv_pro_rfid_init_remove_card"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@color/blue_good"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="删除"
+                android:textColor="@color/tv_White" />
+
+            <TextView
+                android:id="@+id/tv_pro_rfid_init_save_card"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@color/chocolate"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="保存"
+                android:textColor="@color/tv_White" />
+
+            <TextView
+                android:id="@+id/tv_pro_rfid_init_update_card"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@color/blue_good"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="修改"
+                android:textColor="@color/tv_White" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:id="@+id/tv_bqh"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="标签号:"
+                android:textColor="@color/blue"
+                android:layout_marginLeft="20dp"
+                android:textSize="25sp"
+                android:layout_marginTop="5dp"
+                android:hint="请输入标签号"/>
+
+            <EditText
+                android:id="@+id/et_bqh"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/blue"
+                android:inputType="number"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="TID号:"
+                android:textColor="@color/tv_Black"
+                android:layout_marginLeft="20dp"
+                android:textSize="25sp"
+                android:layout_marginTop="5dp"/>
+
+
+            <TextView
+                android:id="@+id/tv_tidh"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="20dp"
+                android:textSize="15sp"
+                android:textColor="@color/tv_Black"/>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="EPC号:"
+                android:textColor="@color/tv_Black"
+                android:layout_marginLeft="20dp"
+                android:textSize="25sp"
+                android:layout_marginTop="5dp"/>
+
+
+            <TextView
+                android:id="@+id/tv_epch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="20dp"
+                android:textSize="15sp"
+                android:textColor="@color/tv_Black"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <!--<LinearLayout
+        android:id="@+id/ll_choice3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#EDECEC"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg_White"
+            android:orientation="horizontal"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:id="@+id/tv_hjh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:text="货架号："
+                android:textColor="@color/black"
+                android:textSize="0dp" />
+            <EditText
+                android:id="@+id/et_init_shelf_tid"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:layout_marginRight="0dp"
+                android:editable="true"
+                android:hint="请输入货架号"
+                android:ems="0" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/tv_pro_up_shelf_read_hjh"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:background="@color/blue_good"
+                android:gravity="center"
+                android:padding="0dp"
+                android:text="读取货架号"
+                android:textColor="@color/tv_White"
+                android:textSize="0dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/bg_White"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/cb_pro_rfid_init_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="全选"
+                android:textColor="@color/tv_Black" />
+
+            <TextView
+                android:id="@+id/tv_pro_up_shelf_up"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/btn_bg_selector"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="开始初始卡信息"
+                android:textColor="@drawable/btn_text_selector" />
+        </LinearLayout>
+    </LinearLayout>-->
+
+
+</RelativeLayout>

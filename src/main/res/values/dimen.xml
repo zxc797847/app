@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="key_height">50dp</dimen>
+    <dimen name="key_num_height">50dp</dimen>
+    <dimen name="key_horizontal_gap">10dp</dimen>
+    <dimen name="key_vertical_gap">6dp</dimen>
+    <dimen name="keyboard_tip_height">50dp</dimen>
+
+    <dimen name="activity_head">70dp</dimen>
+    <dimen name="activity_head_font_size">20sp</dimen>
+    <dimen name="activity_label_min_size">18dp</dimen>
+    <dimen name="activity_label_max_size">25dp</dimen>
+    <dimen name="activity_textedit_height">30dp</dimen>
+    <dimen name="activity_button_font_size">20dp</dimen>
+    <dimen name="activity_button_height">60dp</dimen>
+    <dimen name="activity_button_width">1120sp</dimen>
+    <dimen name="ll_search_height">70dp</dimen>
+    <dimen name="activity_linear_layout_height">60dp</dimen>
+    <dimen name="main_menu_size">16sp</dimen>
+
+    <!-- *********************popwindow样式下拉菜单************************* -->
+    <!-- 下拉菜单文本大小 -->
+    <dimen name="spinnerpop_text_size">25sp</dimen>
+    <!-- 下拉菜单列表项的文本大小 -->
+    <dimen name="spinnerpop_listitem_text_size">25sp</dimen>
+    <!-- 下拉菜单列表项的内边距 -->
+    <dimen name="spinnerpop_listitem_padding">6dp</dimen>
+    <!-- 下拉菜单高度 -->
+    <dimen name="spinnerpop_height">32dp</dimen>
+    <!-- 下拉菜单按钮的外边距 -->
+    <dimen name="spinnerpop_confirm_margin">10dp</dimen>
+</resources>

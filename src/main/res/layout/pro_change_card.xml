@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#FFFFFF" >
+
+
+    <LinearLayout
+        android:id="@+id/ll_choice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EDECEC"
+        android:orientation="vertical" >
+
+		<LinearLayout
+			android:id="@+id/ll_pro_rfid_mgr_shelf_search_head"
+			android:layout_width="match_parent"
+			android:layout_height="38dp"
+			android:background="#2fa4e7"
+			android:orientation="horizontal" >
+
+			<ImageView
+				android:id="@+id/iv_back"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:padding="8dp"
+				android:src="@drawable/tb_icon_actionbar_back" />
+
+			<TextView
+				android:id="@+id/tv_top_title"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="4"
+				android:gravity="center"
+				android:text="换卡"
+				android:textColor="#FFFFFF"
+				android:textSize="20dp" />
+
+			<ImageView
+				android:id="@+id/iv_pro_inventory_mgr_inventory_more"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:padding="8dp"
+				android:src="@drawable/tb_icon_actionbar_more" />
+		</LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_choice22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+			android:layout_marginTop="2dp"
+            android:orientation="horizontal" >
+            
+            	<LinearLayout
+		            android:id="@+id/ll_choice23"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:orientation="horizontal" >
+		            
+            	    	<TextView
+			                android:id="@+id/tv_bqh_name"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_marginLeft="2dp"
+			                android:layout_marginTop="2dp"
+			                android:text="原标签号："
+			                android:textColor="@color/black"
+			                android:textSize="12dp" />
+			
+			            <EditText
+			                android:id="@+id/et_BQH"
+			                android:layout_width="148dp"
+			                android:layout_height="wrap_content"
+			                android:clickable="false"
+		                    android:enabled="false"
+		                    android:focusable="false"
+		                    android:hint="请读取原卡标签号"
+		                    android:singleLine="true"
+			                android:textColor="@color/black"
+			                android:textSize="12dp" />
+			            
+			            <TextView
+		                    android:id="@+id/tv_read_old_rfid"
+		                    android:layout_width="130dp"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginLeft="10dp"
+		                    android:layout_marginRight="0dp"
+		                    android:layout_marginTop="-2dp"
+		                    android:background="@drawable/btn_bg_selector"
+		                    android:gravity="center"
+							android:paddingTop="6dp"
+							android:paddingBottom="6dp"
+							android:paddingLeft="10dp"
+							android:paddingRight="10dp"
+		                    android:text="读取原卡"
+		                    android:textColor="@drawable/btn_text_selector"
+		                    android:textSize="12dp" />
+           	    </LinearLayout>
+        </LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/ll_choice25"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="6dp"
+			android:orientation="horizontal" >
+
+			<LinearLayout
+				android:id="@+id/ll_choice26"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal" >
+
+				<TextView
+					android:id="@+id/tv_new_bqh_name"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="2dp"
+					android:layout_marginTop="2dp"
+					android:text="新卡标签号："
+					android:textColor="@color/black"
+					android:textSize="12dp" />
+
+				<EditText
+					android:id="@+id/et_NEW_BQH"
+					android:layout_width="148dp"
+					android:layout_height="wrap_content"
+					android:clickable="false"
+					android:enabled="false"
+					android:focusable="false"
+					android:hint="请读取新卡标签号"
+					android:singleLine="true"
+					android:textColor="@color/black"
+					android:textSize="12dp" />
+
+				<TextView
+					android:id="@+id/tv_read_new_rfid"
+					android:layout_width="130dp"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="0dp"
+					android:layout_marginTop="-2dp"
+					android:background="@drawable/btn_bg_selector"
+					android:gravity="center"
+					android:paddingTop="6dp"
+					android:paddingBottom="6dp"
+					android:paddingLeft="10dp"
+					android:paddingRight="10dp"
+					android:text="读取新卡"
+					android:textColor="@drawable/btn_text_selector"
+					android:textSize="12dp" />
+			</LinearLayout>
+		</LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_choice24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+            	
+            	<LinearLayout
+		            android:id="@+id/ll_choice28"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:orientation="horizontal" >
+			             
+			             <TextView
+			                 android:id="@+id/tv_pro_info_delete"
+			                 android:layout_width="160dp"
+			                 android:layout_height="wrap_content"
+			                 android:layout_marginBottom="2dp"
+							 android:layout_marginLeft="18dp"
+			                 android:layout_marginRight="42dp"
+			                 android:background="@drawable/btn_bg_delete"
+			                 android:gravity="center"
+			                 android:paddingTop="8dp"
+			                 android:paddingBottom="8dp"
+			                 android:text="清除"
+			                 android:textColor="@drawable/btn_text_selector" 
+			                 android:textSize="12dp"/>
+			             
+			             <TextView
+			                 android:id="@+id/tv_pro_info_save"
+			                 android:layout_width="160dp"
+			                 android:layout_height="wrap_content"
+			                 android:layout_marginBottom="2dp"
+			                 android:layout_marginRight="5dp"
+			                 android:background="@drawable/btn_bg_selector"
+			                 android:gravity="center"
+			                 android:paddingTop="8dp"
+			                 android:paddingBottom="8dp"
+			                 android:text="提交"
+			                 android:textColor="@drawable/btn_text_selector" 
+			                 android:textSize="12dp"/>
+	             </LinearLayout>
+          </LinearLayout>
+
+   	</LinearLayout>
+
+	<com.avic.demo.sebeiglzx.utils.scroller.WMSScrollView
+		android:id="@+id/wMSScrollView1"
+		android:layout_width="412dp"
+		android:layout_height="701dp"
+		android:layout_marginTop="188dp">
+
+		<HorizontalScrollView
+			android:layout_width="390dp"
+			android:layout_height="4000dp">
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="4000dp"
+				android:layout_marginTop="2dp"
+				android:layout_weight="0.20">
+
+				<ListView
+					android:id="@+id/listView_fkb_info"
+					android:layout_width="388dp"
+					android:layout_height="4000dp"
+					android:layout_alignParentLeft="true"
+					android:layout_marginLeft="2dp"
+					android:layout_marginTop="2dp"
+					android:divider="@color/silver"
+					android:dividerHeight="3px"
+					android:paddingBottom="50dp"></ListView>
+			</RelativeLayout>
+		</HorizontalScrollView>
+	</com.avic.demo.sebeiglzx.utils.scroller.WMSScrollView>
+</RelativeLayout>
